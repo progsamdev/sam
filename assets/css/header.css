@@ -1,9 +1,11 @@
-.main-header {
+.main_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem;
 }
-.main-header-menu {
+.main_header_menu {
   display: flex;
   flex-flow: row wrap;
+  gap: 1rem;
 }
