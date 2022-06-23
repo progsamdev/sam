@@ -1,0 +1,102 @@
+.experience .subtitle {
+  color: #e0e0e0;
+}
+
+.experience_text {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 3.75rem;
+}
+
+.experience strong {
+  color: #141414;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.25rem;
+  background-color: #f5f5f5;
+  margin-bottom: 1.25rem;
+  border-radius: 4px;
+  position: relative;
+  gap: 0.875rem 1.25rem;
+}
+
+.job::before {
+  content: "";
+  width: 0.25rem;
+  height: 1.25rem;
+  background: linear-gradient(#b6f729, #b7dd0a);
+  position: absolute;
+  top: 1.25rem;
+  left: -0.25rem;
+}
+
+.job_year {
+  position: absolute;
+  top: 1.25rem;
+  left: -6.25rem;
+  color: #525252;
+  font-size: 0.875rem;
+  width: 80px;
+  text-align: right;
+}
+
+.company_title {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.job_description {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #525252;
+}
+
+.job_skills {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.625rem;
+  align-content: center;
+}
+
+.job_skills li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 0.3125rem 0.625rem;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .experience .subtitle {
+    color: #141414;
+  }
+  .experience_text {
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+  }
+  .job_year {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+
+  .job_year::before {
+    content: "Year: ";
+  }
+
+  @media (max-width: 400px) {
+    .job {
+      grid-template-columns: 1fr;
+    }
+  }
+}
